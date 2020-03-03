@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+        <style type="text/css">
+            .container {
+                width: 800px;
+                margin: 0 auto;
+            }
+            .header {
+                background-color:white;
+                min-height: 50x;
+                text-align: center;
+            }
+            .logo img {
+                width: 200px;
+            }
+            .menu ul {
+                padding: 0;
+            }
+            .menu ul li {
+                display: inline-block;
+                position: relative;
+            }
+            .menu ul li a {
+                padding: 10px 20px;
+                text-decoration: none;
+            }
+            ul.submenu {
+                background-color: lightslategray;
+                border: 1px solid lightcoral;
+                text-align: left;
+                position: absolute;
+                top: 20px;
+                left: 0;
+                display: none;
+            }
+            ul.submenu li {
+                display: block;
+            }
+            ul.submenu li a {
+                display: block;
+                padding: 5px 10px;
+            }
+            .menu ul li:hover ul.submenu {
+                display: block;
+            }
+            .jumbrotan {
+                width: 100%;
+                padding: 80px 40px;
+                box-sizing: border-box;
+                text-align: center;
+                color: white;
+                background-color: grey;
+                background-image: url(image/cover.jpg);
+                background-size: cover;
+                position: relative;
+            }
+            .jumbrotan h2,
+            .jumbrotan p {
+                position: relative;
+                color: white;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                opacity: 0.4;
+            }
+            .content {
+                background-color: lightskyblue;
+                min-height: 500px;
+                text-align: center;
+                overflow: auto;
+            }
+            .thumbnail {
+                background-color: lightpink;
+                text-align: center;
+                padding: 10px;
+                width: 225px;
+                margin: 10px;
+                float: left;
+            }
+            .thumbnail img {
+                width: 100%;
+            }
+            .footer {
+                background-color: lightseagreen;
+                min-height: 50px;
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="header">
+        <div class="Logo">
+            <img src="image/fk.jpg">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul class="submenu">
+                        <li><a href="#">CV</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Portofolio</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="jumbrotan">
+            <div class="overlay"></div>
+            <h2>Welcome to My Homepage</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nessitatibus quae voluptate explicabo architecto fugiat asperiores illo quibusdam qui mollitia, porrofugit.</p>
+        </div>
+        <div class="content">
+            <h2>Our Products</h2>
+            <div class="thumbnail">
+                <img src="image/fk.jpg">
+                <h2>Product 1</h2>
+                <p>Rp 250.000</p>
+            </div>
+            <div class="thumbnail">
+                <img src="image/fk.jpg">
+                <h2>Product 1</h2>
+                <p>Rp 250.000</p>
+            </div>
+            <div class="thumbnail">
+                <img src="image/fk.jpg">
+                <h2>Product 1</h2>
+                <p>Rp 250.000</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright 2019 My Present</p>
+        </div>
+    </div>
+</body>
+</html>
